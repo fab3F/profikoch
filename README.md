@@ -1,1 +1,5 @@
 # profikoch
+TODO
+
+Grundlagen:
+    Verlinkungen
