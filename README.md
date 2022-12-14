@@ -2,4 +2,5 @@
 TODO
 
 Grundlagen:
-    Verlinkungen
+Verlinkungen 
+Zusammenhängende Inhalte
