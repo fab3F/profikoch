@@ -1,0 +1,18 @@
+
+Grundlagen:
+    - Verlinkungen 
+    - Zusammenhängende Inhalte
+    - HTML 
+    - CSS
+
+Einzeln: 
+    - 3 unterschiedliche CSS-Varianten
+    - andere Schriftart (mit backup)
+    - Liste
+    - Tabelle
+    - Bild 
+    - 2 Ankerlinks 
+    - Meta-Infos 
+    - neues HTML-Element
+    - neues CSS-Element 
+    
