@@ -6,13 +6,13 @@ Grundlagen:
     - CSS
 
 Einzeln: 
-    - 3 unterschiedliche CSS-Varianten
-    - andere Schriftart (mit backup)
-    - Liste
-    - Tabelle
-    - Bild 
-    - 2 Ankerlinks 
-    - Meta-Infos 
-    - neues HTML-Element
-    - neues CSS-Element 
+    - 3 unterschiedliche CSS-Varianten          X
+    - andere Schriftart (mit backup)            
+    - Liste                                     
+    - Tabelle                                   
+    - Bild                                      -
+    - 2 Ankerlinks                              
+    - Meta-Infos                                o
+    - neues HTML-Element                        o
+    - neues CSS-Element                         o
      
