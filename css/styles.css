@@ -51,7 +51,7 @@ body {
 .content h3 {
     padding-top: 10px;
     padding-bottom: 2px;
-    font: 500 30px "Source Serif Pro",serif;
+    font: 550 30px "Source Serif Pro",serif;
 }
 
 .content h4 {
@@ -71,4 +71,5 @@ body {
     max-width: 5rem;
     border: 2px solid black;
     border-radius: 5px;
+    background-color: beige;
 }
