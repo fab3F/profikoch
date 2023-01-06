@@ -2,28 +2,28 @@
 <html lang="de">
 <head prefix="og: https://ogp.me/ns#">
 
-<title>Profikoch</title>
+<title>Chili Con Carne - Profikoch</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Profikoch Website - Hier gibt es viele leckere Rezepte!" />
+<meta name="description" content="Leckeres Chili con Carne | Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta name="keywords" content="Profikoch, Rezepte" />
 <meta name="author" content="fab3F, TheKingsSergeant, Flylineo" />
 
-<!-- base href="https://profikoch.netlify.app" target="_self" / -->
+<!-- base href="https://profikoch.netlify.app" target="_self" /-->
 
-<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="/css/reset.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
-
 <link rel="stylesheet" href="css/styles.css" type="text/css">
+<script src="js/rechner.js" type="text/javascript" defer></script>
 
 <link rel="icon" type="image/png" href="images/HIER AUCH BILD REIN" />
 
 <meta property="og:title" content="Profikoch" />
 <meta property="og:url" content="https://profikoch.netlify.app" />
-<meta property="og:description" content="Profikoch Website - Hier gibt es viele leckere Rezepte!" />
+<meta property="og:description" content="Leckeres Chili con Carne | Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta property="og:image" content="images/HIER MUSS NOCH EIN BILD REIN" />
 
 </head>
@@ -44,7 +44,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">REZEPT 1</a>
+          <a class="nav-link" href="#">Chili con Carne</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">REZEPT 2</a>
@@ -66,15 +66,20 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 <!-- Content -->
 <div class="background">
   <section class="container content">
-    <h1>REZEPT NUMERO UNO</h1>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
-    <p>Test</p>
+    <h1>Chili con Carne</h1>
+    <h3>Anzahl der Portionen: <input class="portionen" oninput="rechnen(this.value);" type="number" name="portinen" id="portinen" value="4"></h3>
+    <table id="zutaten-tabelle">
+      <tr>
+        <td>600</td>
+        <td>Gramm</td>
+        <td>Rinderhackfleisch</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Stück</td>
+        <td>Zwiebeln</td>
+      </tr>
+    </table>  
   </section> 
 </div>
 </body>
