@@ -3,7 +3,16 @@ body {
 }
 
 .active a{
-    border-top: solid 3px darkgrey;
+    font-weight: 700;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.content * {
+    max-width: 1248px;
 }
 
 .carousel-item {
@@ -22,8 +31,8 @@ body {
     border: black 1px solid;
     border-style: none;
     border-radius: 10px;
-    left: 40%;
-    right: 40%;
+    left: 25%;
+    right: 25%;
 }
 
 .background {
@@ -104,7 +113,7 @@ body {
 #zutaten-tabelle th {
     background-color: beige;
     font-weight: 600;
-    padding: 10px 100px;
+    padding: 10px 10px;
     text-align: center;
 }
 
