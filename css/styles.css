@@ -2,6 +2,10 @@ body {
     background-color: #F0F0F2;
 }
 
+.active a{
+    border-top: solid 3px darkgrey;
+}
+
 .carousel-item {
     height: 65vh;
     min-height: 350px;
