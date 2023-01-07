@@ -7,13 +7,11 @@ Grundlagen:
 
 Einzeln: 
     - 3 unterschiedliche CSS-Varianten          X
-    - andere Schriftart (mit backup)            
-    - Liste                                     
+    - andere Schriftart (mit backup)            o
+    - Liste                                     o
     - Tabelle                                   
-    - Bild                                      -
+    - Bild                                      o
     - 2 Ankerlinks                              
     - Meta-Infos                                o
     - neues HTML-Element                        o
     - neues CSS-Element                         o
-    -deine mum
-     
