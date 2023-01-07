@@ -70,135 +70,157 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 
     <img src="images/claudio-schwarz-fXxsNyiqTio-unsplash.jpg" type="image/jpeg" alt="Truthahn" class="responsive">
 
-    <h3>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portinen" id="portinen" value="4"></h3>
+    <h3>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portinen" id="portinen" value="4"></h3> 
+    
+    <h4>Für die Füllung:</h4>
+      <table id="zutaten-tabelle" class="responsive">
+        <thead>
+          <tr>
+            <th>Menge</th>
+            <th>Einheit</th>
+            <th>Zutat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6-7</td>
+            <td>Kiloramm</td>
+            <td>Truthahn</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Laib</td>
+            <td>(Maismehl-)Brot</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Stück</td>
+            <td>Zwiebeln</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Scheiben</td>
+            <td>Frühstücksspeck</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Zehen</td>
+            <td>Knoblauch</td>
+          </tr>
+          <tr>
+            <td>200</td>
+            <td>Gramm</td>
+            <td>Butter</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Stängel</td>
+            <td>Bleichsellerie</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Stück</td>
+            <td>Paprikaschote(n), rote</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>EL</td>
+            <td>Thymian, getrocknet</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>EL</td>
+            <td>Salbei, getrocknet</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Gramm</td>
+            <td>Pekanüsse, geröstet und gehackt</td>
+          </tr>
+          <tr>
+            <td>300</td>
+            <td>Milliliter</td>
+            <td>Geflügelfond/Hühnerbrühe</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stück</td>
+            <td>Eier</td>
+          </tr>
+          <tr>
+            <td>nach Bedarf</td>
+            <td></td>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+    <h4>Für die Sauce:</h4>
+      <table id="zutaten-tabelle" class="responsive">
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td>Stück</td>
+            <td>Karotten</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Stück</td>
+            <td>Zwiebeln</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Stängel</td>
+            <td>Petersilie</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Stück</td>
+            <td>Lorbeerblätter</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>EL</td>
+            <td>weiche Butter</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Stängel</td>
+            <td>Bleichsellerie</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Stück</td>
+            <td>Nelken</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>TL</td>
+            <td>Thymian, getrocknet</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>TL</td>
+            <td>Pfefferkörner</td>
+          </tr>
+          <tr>
+            <td>600</td>
+            <td>Milliliter</td>
+            <td>Geflügelfond/Hühnerbrühe</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>EL</td>
+            <td>Mehl</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <table id="zutaten-tabelle" class="responsive">
-      <thead>
-        <tr>
-          <th>Menge</th>
-          <th>Einheit</th>
-          <th>Zutat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>600</td>
-          <td>Gramm</td>
-          <td>Rinderhackfleisch</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Stück</td>
-          <td>Zwiebeln</td>
-        </tr>
-        <tr>
-          <td>0.5</td>
-          <td>Stück</td>
-          <td>Gemüsezwiebeln</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Zehen</td>
-          <td>Knoblauch</td>
-        </tr>
-        <tr>
-          <td>300</td>
-          <td>Gramm</td>
-          <td>Tomaten, geschälte (Dose), mit dem Saft</td>
-        </tr>
-        <tr>
-          <td>500</td>
-          <td>Gramm</td>
-          <td>Kidneybohnen</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Stück</td>
-          <td>Paprikaschote(n), rote</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Stück</td>
-          <td>Paprikaschote(n), gelbe</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Stück</td>
-          <td>Chilischote(n), rot</td>
-        </tr>
-        <tr>
-          <td>250</td>
-          <td>Gramm</td>
-          <td>Erbsen</td>
-        </tr>
-        <tr>
-          <td>250</td>
-          <td>Gramm</td>
-          <td>Mais</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>einzelne Stücke</td>
-          <td>Zartbitterschokolade, mind. 70% Kakaoanteil</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Salz und Pfeffer</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Paprikapulver, edelsüßes</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Paprikapulver, rosenscharfes</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Olivenöl, kräftiges</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Kreuzkümmelpulver</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Korianderpulver</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Oregano</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Gemüsebrühepulver</td>
-        </tr>
-        <tr>
-          <td>nach Bedarf</td>
-          <td></td>
-          <td>Zitronensaft</td>
-        </tr>
-      </tbody>
-    </table>
 
     <h3>Zubereitung</h3>
 
-    <p>Die Zwiebeln hacken und in reichlich kräftigem Olivenöl anschwitzen. Anschließend das Hackfleisch zugeben und darin ordentlich anbraten. Die Knoblauchzehen abziehen, pressen und hinzugeben, anschließend mit den geschälten Tomaten inklusive Saft ablöschen. Die Tomaten sollten dann in dem Topf bzw. der Pfanne zerkleinert werden. Nach Geschmack mit den Gewürzen abschmecken und die zerkleinerten Chilischoten komplett mit Kernen hinzugeben. Ca. 20 Minuten bei mittlerer bis hoher Hitze köcheln lassen.</p>
-    
-    <p>Die Paprikaschoten putzen, würfeln und hinzugeben. Ebenfalls die Schokolade zerkleinern und hinzufügen. Immer wieder gut mischen. Nach etwa 10 Minuten das restliche Gemüse hinzugeben (Kidneybohnen, Mais, Erbsen). Noch einmal ca. 10 Minuten köcheln lassen, dabei das Gericht mit den angegebenen Gewürzen erneut gut abschmecken. Heiß servieren.</p>
-  
-    <p>Mit Brot und Sauerrahm (oder Ähnlichem) servieren.</p>
-
-    <p>Tipp: Mit dem Brot und dem Sauerrahm kann die Schärfe gut abgemildert werden. Alle, die gern scharf essen, lassen den Sauerrahm weg.</p>
-  
+    <p> </p>
   </section> 
 </div>
 </body>
