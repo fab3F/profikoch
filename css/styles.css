@@ -80,6 +80,11 @@ body {
 .content h4 {
     padding-top: 15px;
     padding-bottom: 2px;
+    font: 500 25px "Source Serif Pro",serif;
+}
+.content h5 {
+    padding-top: 15px;
+    padding-bottom: 2px;
     font: 400 20px "Source Serif Pro",serif;
 }
 
