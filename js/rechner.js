@@ -26,7 +26,10 @@ function calculate(ports){
         }
 
         if(isNumber(orginal_number)){
-            cell.innerHTML = (orginal_number / orginal_value ) * portionen;
+
+            let inner = (orginal_number / orginal_value ) * portionen;
+            inner = roundOff(inner, 2).toString();
+            cell.innerHTML = inner.replaceAll('.',',');
         }
         
 
@@ -35,4 +38,8 @@ function calculate(ports){
 
 function isNumber(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
-  }
+}
+
+function roundOff(value,round) {
+    return (parseInt(value * (10 ** (round + 1))) - parseInt(value * (10 ** round)) * 10) > 4 ? (((parseFloat(parseInt((value + parseFloat(1 / (10 ** round))) * (10 ** round))))) / (10 ** round)) : (parseFloat(parseInt(value * (10 ** round))) / ( 10 ** round));
+ }
