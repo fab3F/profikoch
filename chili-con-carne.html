@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Leckeres Chili con Carne | Profikoch Website - Hier gibt es viele leckere Rezepte!" />
-<meta name="keywords" content="Profikoch, Rezepte" />
+<meta name="keywords" content="Profikoch, Rezepte, Chili con Carne" />
 <meta name="author" content="fab3F, TheKingsSergeant, Flylineo" />
 
 <base href="https://profikoch.netlify.app" target="_self" />
@@ -19,12 +19,12 @@
 <link rel="stylesheet" href="css/styles.css" type="text/css">
 <script src="js/rechner.js" type="text/javascript" defer></script>
 
-<link rel="icon" type="image/png" href="images/kitchen_knife_cooking_spatula-512.png" />
+<link rel="icon" type="image/png" href="images/favicon.png" />
 
 <meta property="og:title" content="Profikoch" />
 <meta property="og:url" content="https://profikoch.netlify.app" />
 <meta property="og:description" content="Leckeres Chili con Carne | Profikoch Website - Hier gibt es viele leckere Rezepte!" />
-<meta property="og:image" content="images/kitchen_knife_cooking_spatula-512.png" />
+<meta property="og:image" content="images/favicon.png" />
 
 </head>
 <body>
@@ -37,8 +37,8 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a href="index.html"> 
-      <img src="images/kitchen_knife_cooking_spatula-512.png" alt="Logo" style="height: 45px; width: 45px; margin-right:15px;"> 
+    <a href="#"> 
+      <img src="images/favicon.png" class="logo responsive" alt="Logo"> 
     </a>
     <a class="navbar-brand" href="#"><b>Profikoch</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,10 +50,10 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
           <a class="nav-link" href="chili-con-carne.html">Chili con Carne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Truthahn.html">Truthahn</a>
+          <a class="nav-link" href="truthahn.html">Truthahn</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Lasagne.html">Lasagne</a>
+          <a class="nav-link" href="lasagne.html">Lasagne</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="panna-cotta.html">Panna Cotta</a>
@@ -73,7 +73,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 
     <img src="images/chili-con-carne.jpeg" type="image/jpeg" alt="Chili con Carne" class="responsive">
 
-    <h3>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portinen" id="portinen" value="4"></h3>
+    <h3>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portionen" id="portionen" value="4"></h3>
 
     <table id="zutaten-tabelle" class="responsive">
       <thead>

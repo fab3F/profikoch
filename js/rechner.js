@@ -1,6 +1,6 @@
 let tb = document.getElementById("zutaten-tabelle").outerHTML;
 localStorage.setItem("table", tb);
-localStorage.setItem("value", document.getElementsByClassName("portionen")[0].value);
+localStorage.setItem("value", document.getElementById("portionen").value);
 
 function calculate(ports){
 
