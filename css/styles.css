@@ -11,6 +11,12 @@ body {
     height: auto;
 }
 
+.logo {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+
 .content * {
     max-width: 1248px;
 }
@@ -27,7 +33,7 @@ body {
 
 .carousel-caption{
     background-color: rgba(146, 135, 140, 0.50);
-    padding: 0px;
+    padding: 5px;
     border: black 1px solid;
     border-style: none;
     border-radius: 10px;
@@ -56,7 +62,6 @@ body {
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
-/*  */
 
 .content h1 {
     padding-top: 20px;
