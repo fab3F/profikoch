@@ -26,6 +26,35 @@
 <meta property="og:description" content="Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta property="og:image" content="images/favicon.png" />
 
+<style type="text/css">
+  .rezept {
+    clear: left;
+  }
+
+  .rezept a {
+    float: left;
+    margin-right: 30px;
+    max-width: 650px;
+  }
+
+  .rezeptlink {
+    border-radius: 8px;
+    background-color: #bfbfbc;
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    align-items: center;
+    transition: transform .2s;
+  }
+
+  .rezeptlink:hover {
+    color: black;
+    transform: scale(1.1);
+  }
+
+</style>
+
+
 </head>
 <body>
 
@@ -47,19 +76,19 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="chili-con-carne.html">Chili con Carne</a>
+          <a class="nav-link" href="chili-con-carne">Chili con Carne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="truthahn.html">Truthahn</a>
+          <a class="nav-link" href="truthahn">Truthahn</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="lasagne.html">Lasagne</a>
+          <a class="nav-link" href="lasagne">Lasagne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="panna-cotta.html">Panna Cotta</a>
+          <a class="nav-link" href="panna-cotta">Panna Cotta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">REZEPT 5</a>
+          <a class="nav-link" href="zwiebelkuchen">Zwiebelkuchen</a>
         </li>
       </ul>
     </div>
@@ -78,7 +107,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" style="background-image: url('images/chili-con-carne.jpeg')">
-        <a href="chili-con-carne.html">
+        <a href="chili-con-carne">
           <div class="carousel-caption">
             <h5>Chili con Carne</h5>
             <p>Scharfes Ragout aus Fleisch und Chilischoten</p>
@@ -86,7 +115,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         </a>
       </div>
       <div class="carousel-item" style="background-image: url('images/truthahn.jpg')">
-        <a href="truthahn.html">
+        <a href="truthahn">
           <div class="carousel-caption">
             <h5>Truthahn</h5>
             <p>Thanksgiving-Klassiker aus den USA</p>
@@ -94,7 +123,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         </a>
       </div>
       <div class="carousel-item" style="background-image: url('images/lasagne.jpeg')">
-        <a href="lasagne.html">
+        <a href="lasagne">
           <div class="carousel-caption">
             <h5>Lasagne</h5>
             <p>Klassiker der italienischen Küche</p>
@@ -102,7 +131,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         </a>
       </div>
       <div class="carousel-item" style="background-image: url('images/panna-cotta.jpg')">
-        <a href="panna-cotta.html">
+        <a href="panna-cotta">
           <div class="carousel-caption">
             <h5>Panna Cotta</h5>
             <p>Dessert mit mediterranem Flair</p>
@@ -110,10 +139,10 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         </a>
       </div>
       <div class="carousel-item" style="background-image: url('images/BILD NOCH FEHLEN TUT WENN DAS HIER STEHT')">
-        <a href="#">
+        <a href="zwiebelkuchen">
           <div class="carousel-caption">
-            <h5>REZEPT 5</h5>
-            <p>HMMM LEGGA LEGGA</p>
+            <h5>Zwiebelkuchen</h5>
+            <p>Herzhafter Kuchen</p>
           </div>
         </a>
       </div>
@@ -133,36 +162,58 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 <div class="background">
   <section class="container content">
     <h1>Profikoch</h1>
-    <h3>Hauptspeisen</h3>
-    <ul>
-      <li>
-        <a  href="truthahn.html">
-          <img class="responsive recipe_img" src="images/truthahn2.jpg";> 
-        </a>
-        <h4>Truthahn</h4> - Dinner wie in den USA
-      </li>
-      <li>
-        <a href="lasagne.html">
-          <img class="responsive recipe_img" src="images/lasagne2.jpg";> 
-        </a>
-        <h4>Lasagne</h4> - original italienische Pasta
-      </li>
-      <li>
-        <a href="chili-con-carne.html">
-          <img class="responsive recipe_img" src="images/chili-con-carne2.jpg";> 
-        </a>
-        <h4>Chili con Carne</h4> - mexikanischer Bohneneintopf
-      </li>
-    </ul>
-    <h3>Desserts</h3>
-    <ul>
-      <li>
-        <a href="panna-cotta.html">
-          <img class="responsive recipe_img" src="images/panna-cotta2.jpg";> 
-        </a>
-        <h4>Panna Cotta</h4> - mediterrane Sahnespeise
-      </li>
-    </ul>
+
+    <h3>Vorspeisen</h3>
+    <div class="rezept">
+      <a href="zwiebelkuchen">
+        <img class="responsive" src="images/zwiebelkuchen2.jpg";>
+      </a>
+      <h4>Zwiebelkuchen</h4>
+      <p>Leckere Zwiebelkuchen aus der Muffinform! Der Zwiebelkuchen ist ein herzhafter Kuchen, der nach seinem hauptsächlichen Belag, den Zwiebeln, benannt ist. Bekannt ist der Kuchen im süddeutschen, ostdeutschen und im schweizerischen Raum sowie im Elsass.</p>
+      <span><a href="zwiebelkuchen" class="rezeptlink">Hier geht es zum Rezept!</a></span>
+    </div>
+
+    <h3 style="clear: left;">Hauptspeisen</h3>
+    <div class="rezept">
+      <a href="truthahn">
+        <img class="responsive" src="images/truthahn2.jpg";>
+      </a>
+      <h4>Truthahn</h4>
+      <p>Dinner wie in den USA</p>
+      <span><a href="truthahn" class="rezeptlink">Hier geht es zum Rezept!</a></span>
+    </div>
+    
+    <div class="rezept">
+      <a href="lasagne">
+        <img class="responsive" src="images/lasagne2.jpg";>
+      </a>
+      <h4>Lasagne</h4>
+      <p>Original italienische Pasta</p>
+      <span><a href="lasagne" class="rezeptlink">Hier geht es zum Rezept!</a></span>
+    </div>
+
+    <div class="rezept">
+      <a href="chili-con-carne">
+        <img class="responsive" src="images/chili-con-carne2.jpg";>
+      </a>
+      <h4>Chili con Carne</h4>
+      <p>Mexikanischer Bohneneintopf</p>
+      <span><a href="chili-con-carne" class="rezeptlink">Hier geht es zum Rezept!</a></span>
+    </div>
+
+    <h3 style="clear: left;">Desserts</h3>
+    
+    <div class="rezept">
+      <a href="panna-cotta">
+        <img class="responsive" src="images/panna-cotta2.jpg";>
+      </a>
+      <h4>Panna Cotta</h4>
+      <p>Mediterrane Sahnespeise</p>
+      <span><a href="panna-cotta" class="rezeptlink">Hier geht es zum Rezept!</a></span>
+    </div>
+
+    <div style="clear: left;"></div>
+
   </section> 
 </div>
 </body>
