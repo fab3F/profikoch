@@ -9,7 +9,7 @@
 <meta name="keywords" content="Profikoch, Rezepte, Truthahn" />
 <meta name="author" content="fab3F, TheKingsSergeant, Flylineo" />
 
-<base href="https://profikoch.netlify.app" target="_self" />
+<!-- base href="https://profikoch.netlify.app" target="_self" /-->
 
 <link rel="stylesheet" href="css/reset.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -25,27 +25,6 @@
 <meta property="og:url" content="https://profikoch.netlify.app" />
 <meta property="og:description" content="Thangsgiving-Truthahn | Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta property="og:image" content="images/favicon.png" />
-
-<style>
-  .Zutatenlink {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font: normal 18px/24px "Source Sans Pro",Arial,sans-serif; 
-  border-color: black;
-  border-style: solid;
-  border-radius: 5px;
-  color: black;
-  margin-left: 20px;
-  margin-right: 20px;
-  }
-  
-  a:link { text-decoration: none;color:black; }
-  a:visited { text-decoration: none; color:rgb(0, 122, 0); }
-  a:hover { text-decoration: none; color:rgb(0, 122, 0); }
-  a:active { text-decoration: none; color:rgb(0, 122, 0); }
-  </style>
 
 </head>
 <body>
@@ -94,156 +73,164 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
 
     <img src="images/truthahn2.jpg" type="image/jpg" alt="Truthahn" class="responsive">
 
-    <h3>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portionen" id="portionen" value="10"></h3> 
+    <h2>Anzahl der Portionen: <input class="portionen" oninput="calculate(this.value);" type="number" name="portionen" id="portionen" value="10"></h3> 
     
-    
-      <table id="zutaten-tabelle" class="responsive">
-        <thead>
-          <tr>
-            <th>Menge</th>
-            <th>Einheit</th>
-            <th>Zutat</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr> 
-            <td><a id="Füllung"><b>Für die Füllung:</b></a></td> 
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Kiloramm</td>
-            <td>Truthahn</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Laib</td>
-            <td>(Maismehl-)Brot</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Stück</td>
-            <td>Zwiebeln</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Scheiben</td>
-            <td>Frühstücksspeck</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Zehen</td>
-            <td>Knoblauch</td>
-          </tr>
-          <tr>
-            <td>200</td>
-            <td>Gramm</td>
-            <td>Butter</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Stängel</td>
-            <td>Bleichsellerie</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Stück</td>
-            <td>Paprikaschote(n), rote</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>EL</td>
-            <td>Thymian, getrocknet</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>EL</td>
-            <td>Salbei, getrocknet</td>
-          </tr>
-          <tr>
-            <td>100</td>
-            <td>Gramm</td>
-            <td>Pekanüsse, geröstet und gehackt</td>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>Milliliter</td>
-            <td>Geflügelfond/Hühnerbrühe</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Stück</td>
-            <td>Eier</td>
-          </tr>
-          <tr>
-            <td>nach Bedarf</td>
-            <td></td>
-            <td>Salz und Pfeffer</td>
-          </tr>
-          <tr>
-            <td><a id="Sauce"><b>Für die Sauce:</b></a></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Stück</td>
-            <td>Karotten</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Stück</td>
-            <td>Zwiebeln</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Stängel</td>
-            <td>Petersilie</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Stück</td>
-            <td>Lorbeerblätter</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>EL</td>
-            <td>weiche Butter</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Stängel</td>
-            <td>Bleichsellerie</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Stück</td>
-            <td>Nelken</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>TL</td>
-            <td>Thymian, getrocknet</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>TL</td>
-            <td>Pfefferkörner</td>
-          </tr>
-          <tr>
-            <td>600</td>
-            <td>Milliliter</td>
-            <td>Geflügelfond/Hühnerbrühe</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>EL</td>
-            <td>Mehl</td>
-          </tr>
-        </tbody>
-      </table>
+    <h4 id="Füllung">Für die Füllung:</h4>
+    <table class="zutaten-tabelle responsive">
+      <thead>
+        <tr>
+          <th>Menge</th>
+          <th>Einheit</th>
+          <th>Zutat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6</td>
+          <td>Kiloramm</td>
+          <td>Truthahn</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Laib</td>
+          <td>(Maismehl-)Brot</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Stück</td>
+          <td>Zwiebeln</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Scheiben</td>
+          <td>Frühstücksspeck</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Zehen</td>
+          <td>Knoblauch</td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>Gramm</td>
+          <td>Butter</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Stängel</td>
+          <td>Bleichsellerie</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Stück</td>
+          <td>Paprikaschote(n), rote</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>EL</td>
+          <td>Thymian, getrocknet</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>EL</td>
+          <td>Salbei, getrocknet</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>Gramm</td>
+          <td>Pekanüsse, geröstet und gehackt</td>
+        </tr>
+        <tr>
+          <td>300</td>
+          <td>Milliliter</td>
+          <td>Geflügelfond/Hühnerbrühe</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Stück</td>
+          <td>Eier</td>
+        </tr>
+        <tr>
+          <td>nach Bedarf</td>
+          <td></td>
+          <td>Salz und Pfeffer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 id="Sauce">Für die Sauce:</h2>
+    <table class="zutaten-tabelle responsive">
+      <thead>
+        <tr>
+          <th>Menge</th>
+          <th>Einheit</th>
+          <th>Zutat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3</td>
+          <td>Stück</td>
+          <td>Karotten</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Stück</td>
+          <td>Zwiebeln</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Stängel</td>
+          <td>Petersilie</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Stück</td>
+          <td>Lorbeerblätter</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>EL</td>
+          <td>weiche Butter</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Stängel</td>
+          <td>Bleichsellerie</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Stück</td>
+          <td>Nelken</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>TL</td>
+          <td>Thymian, getrocknet</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>TL</td>
+          <td>Pfefferkörner</td>
+        </tr>
+        <tr>
+          <td>600</td>
+          <td>Milliliter</td>
+          <td>Geflügelfond/Hühnerbrühe</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>EL</td>
+          <td>Mehl</td>
+        </tr>
+      </tbody>
+    </table>
 
 
     <h3>Zubereitung</h3>
 
-    <h4>Füllung:     <a href="truthahn.html/#Füllung" class="Zutatenlink">Zutaten Füllung</a></h4>
+    <h4 style="display: inline-flex;">Füllung:</h4>
+    <span><a href="truthahn.html/#Füllung" class="zutatenlink">Zutaten der Füllung</a></span>
     <p>Das Maismehlbrot in Würfel schneiden und im Backofen bei 180 Grad ca. 10 Minuten rösten. In eine große Schüssel geben.
     Frühstücksspeck kross anbraten, abtropfen lassen. Speck zerkrümeln und zum Maismehlbrot geben. <br>
     Butter in die Pfanne geben, Zwiebeln, Knoblauch, Sellerie und Paprika zugeben und unter Rühren 15 Minuten bei mittlerer Hitze schmoren und zusammen mit Thymian, Salbei und Pekannüssen zur Brotmischung geben. Geflügelfond über die Masse geben, alles gut mischen und mit Salz und Pfeffer abschmecken, abkühlen lassen.<br>
@@ -256,14 +243,15 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
       Truthahn mit der Brotmasse füllen. Die Öffnung mit Fleischspießen schließen, die Beine mit Küchengarn zusammenbinden.<br>
       Wenn Füllung übrig bleibt, in einer Auflaufform 1 Stunde im Ofen backen. </p>
    
-      <p>Den Truthahn in eine große Form legen, das restliche Gemüse und den Fond dazugeben.
+    <p>Den Truthahn in eine große Form legen, das restliche Gemüse und den Fond dazugeben.
       Bei 170 Grad 3,5 - 4,5 Stunden im Backofen bei Umluft braten. <br>
       Sollte der Truthahn zu schnell braun werden, mit Alufolie abdecken. Immer wieder mit dem Fond übergießen.<br>
       Zeigt das Fleischthermometer an der dicksten Stelle der Keule 90 Grad an, ist er fertig.<br> 
       Den fertigen Truthahn aus der Form nehmen und 30 Minuten ruhen lassen.</p>
 
-    <h4>Sauce:   <a href="truthahn.html/#Sauce" class="Zutatenlink">Zutaten Sauce</a></h4> 
-    
+    <h4 style="display: inline-flex;">Sauce:</h4>
+    <span><a href="truthahn.html/#Sauce" class="zutatenlink">Zutaten der Sauce</a></span>
+
     <p>Die Flüssigkeit aus der Form durch ein Sieb geben, Gemüse ausdrücken und 5 Minuten stehen lassen, das Fett abschöpfen. Butter schmelzen, das Mehl zugeben und bräunen.<br>
        Portionsweise den vorbereiteten, kalten Fond einrühren, dabei immer wieder aufwallen lassen, dann portionsweise die Bratensauce zugeben. 
        Bei schwacher Hitze 10 - 15 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken. <br>

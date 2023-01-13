@@ -64,28 +64,30 @@ body {
 
 
 .content h1 {
-    padding-top: 20px;
+    padding-top: 35px;
     padding-bottom: 2px;
     border-bottom: 3px solid grey;
     font: 800 50px "Source Serif Pro",serif;
 }
 
 .content h2 {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 2px;
-    font: 600 40px "Source Serif Pro",serif;
+    font: 500 35px "Source Serif Pro",serif;
+    font-weight: bold;
 }
 
 .content h3 {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 2px;
-    font: 550 30px "Source Serif Pro",serif;
+    font: 500 30px "Source Serif Pro",serif;
+    font-weight: bold;
 }
 
 .content h4 {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 2px;
-    font: 500 25px "Source Serif Pro",serif;
+    font: 600 20px/24px "Source Sans Pro",Arial,sans-serif;
 }
 .content h5 {
     padding-top: 15px;
@@ -118,51 +120,76 @@ body {
     background-color: beige;
 }
 
-#zutaten-tabelle {
+.recipe_img {
+    max-width: 700px;
+}
+
+.zutaten-tabelle {
     font-size: 20px;
     border-collapse: separate;
     border-spacing: 0 5px;
+    
 }
 
-#zutaten-tabelle th {
+.zutaten-tabelle thead tr {
+    border-spacing: 100px 0;
+}
+
+.zutaten-tabelle th {
     background-color: beige;
     font-weight: 600;
     padding: 10px 10px;
     text-align: center;
 }
 
-#zutaten-tabelle th:first-child {
+.zutaten-tabelle th:first-child {
     border-left-style: solid;
     border-top-left-radius: 18px; 
     border-bottom-left-radius: 18px;
 }
 
-#zutaten-tabelle th:last-child {
+.zutaten-tabelle th:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 18px; 
     border-top-right-radius: 18px; 
 }
 
-#zutaten-tabelle td {
+.zutaten-tabelle td {
     padding: 10px 0px;
     text-align: center;
     border: solid 1px white;
     border-style: none;
 }
 
-#zutaten-tabelle td:first-child {
+.zutaten-tabelle td:first-child {
     border-left-style: solid;
     border-top-left-radius: 18px; 
     border-bottom-left-radius: 18px;
 }
 
-#zutaten-tabelle td:last-child {
+.zutaten-tabelle td:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 18px; 
     border-top-right-radius: 18px; 
 }
 
-#zutaten-tabelle tr:nth-of-type(odd) {
+.zutaten-tabelle tr:nth-of-type(odd) td {
     background-color: #dddddd;
 }
-    
+
+.zutatenlink {
+    display: inline-flex;
+    border-radius: 8px;
+    background-color: #bfbfbc;
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 10px;
+    transition: transform .2s;
+}
+
+.zutatenlink:hover {
+    color: black;
+    transform: scale(1.1);
+}

@@ -1,39 +1,53 @@
-let tb = document.getElementById("zutaten-tabelle").outerHTML;
-localStorage.setItem("table", tb);
+let tbs = document.getElementsByClassName("zutaten-tabelle");
+for(let i = 0; i < tbs.length; i++){
+    localStorage.setItem("table" + i, tbs[i].outerHTML);
+}
 localStorage.setItem("value", document.getElementById("portionen").value);
 
 function calculate(ports){
 
-    let orginal_table = localStorage.getItem("table");
+    let tbsl = document.getElementsByClassName("zutaten-tabelle").length;
     let orginal_value = parseInt(localStorage.getItem("value"));
 
-    let temp = document.createElement('div');
-    temp.innerHTML = orginal_table;
-    let orginal_rows = temp.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
-    temp.remove();
+    for(let i = 0; i < tbsl; i++){
 
-    var rows = document.getElementById("zutaten-tabelle").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+        let orginal_table = localStorage.getItem("table" + i);
+        let temp = document.createElement('div');
+        temp.innerHTML = orginal_table;
+        let orginal_rows = temp.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+        temp.remove();
 
-    for(let i = 0; i < orginal_rows.length; i++){
 
-        let orginal_number = orginal_rows[i].getElementsByTagName("td")[0].innerHTML;
-        let cell = rows[i].getElementsByTagName("td")[0];
+        var rows = document.getElementsByClassName("zutaten-tabelle")[i].getElementsByTagName("tbody")[0].getElementsByTagName("tr");
 
-        let portionen = parseFloat(ports.replaceAll(',','.'));
+        for(let o = 0; o < orginal_rows.length; o++){
 
-        if(portionen < 0){
-            portionen = 0;
+            let orginal_number = orginal_rows[o].getElementsByTagName("td")[0].innerHTML;
+            let cell = rows[o].getElementsByTagName("td")[0];
+
+            let portionen = parseFloat(ports.replaceAll(',','.'));
+
+            if(portionen < 0){
+                portionen = 0;
+            }
+
+            if(isNumber(orginal_number)){
+
+                let inner = (orginal_number / orginal_value ) * portionen;
+                inner = roundOff(inner, 2).toString();
+                cell.innerHTML = inner.replaceAll('.',',');
+            }
+            
+
         }
-
-        if(isNumber(orginal_number)){
-
-            let inner = (orginal_number / orginal_value ) * portionen;
-            inner = roundOff(inner, 2).toString();
-            cell.innerHTML = inner.replaceAll('.',',');
-        }
-        
 
     }
+
+    
+
+
+
+    
 }
 
 function isNumber(n) {
