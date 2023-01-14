@@ -43,11 +43,6 @@ function calculate(ports){
 
     }
 
-    
-
-
-
-    
 }
 
 function isNumber(n) {
