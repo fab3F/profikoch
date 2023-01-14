@@ -9,7 +9,7 @@
 <meta name="keywords" content="Profikoch, Rezepte" />
 <meta name="author" content="fab3F, TheKingsSergeant, Flylineo" />
 
-<base href="https://profikoch.netlify.app" target="_self" />
+<!-- base href="https://profikoch.netlify.app" target="_self" /-->
 
 <link rel="stylesheet" href="css/reset.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -37,8 +37,20 @@
     max-width: 650px;
   }
 
+  .rezept img {
+    border: 2px solid black;
+    transition: transform .4s;
+  }
+
+  .rezept img:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+  }
+
   .rezeptlink {
     border-radius: 8px;
+    border: 0px solid white;
+    border-style: none;
     background-color: #bfbfbc;
     color: black;
     padding: 4px 8px;
@@ -49,7 +61,7 @@
 
   .rezeptlink:hover {
     color: black;
-    transform: scale(1.1);
+    transform: scale(1.075);
   }
 
 </style>
@@ -142,7 +154,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <a href="zwiebelkuchen">
           <div class="carousel-caption">
             <h5>Zwiebelkuchen</h5>
-            <p>Herzhafter Kuchen</p>
+            <p>Herzhafter elsässischer Kuchen</p>
           </div>
         </a>
       </div>
@@ -169,7 +181,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <img class="responsive" src="images/zwiebelkuchen2.jpg";>
       </a>
       <h4>Zwiebelkuchen</h4>
-      <p>Leckere elsässischer Zwiebelkuchen aus der Muffinform <!--Der Zwiebelkuchen ist ein herzhafter Kuchen, der nach seinem hauptsächlichen Belag, den Zwiebeln, benannt ist. Bekannt ist der Kuchen im süddeutschen, ostdeutschen und im schweizerischen Raum sowie im Elsass. --> </p>
+      <p>Der Zwiebelkuchen ist ein herzhafter Kuchen, der nach seinem hauptsächlichen Belag, den Zwiebeln, benannt ist. Bekannt ist der Kuchen im süddeutschen, ostdeutschen und im schweizerischen Raum sowie im Elsass.</p>
       <span><a href="zwiebelkuchen" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
@@ -179,7 +191,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <img class="responsive" src="images/truthahn2.jpg";>
       </a>
       <h4>Truthahn</h4>
-      <p>Dinner wie in den USA</p>
+      <p>Seit 1941 feiert man Thanksgiving am vierten Donnerstag im November. Es gilt als das wichtigste Familienfest der Amerikaner, das man traditionell mit einem großen Festessen am Donnerstagabend begeht. Dabei kommt bei den meisten ein großer, gefüllter Truthahn als Braten auf den Tisch.</p>
       <span><a href="truthahn" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
     
@@ -188,7 +200,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <img class="responsive" src="images/lasagne2.jpg";>
       </a>
       <h4>Lasagne</h4>
-      <p>Original italienische Pasta</p>
+      <p>Lasagne, ganz klassisch – mit einer leckeren Hackfleisch-Bolognese und hausgemachter Béchamelsoße. Ein Rezept zum Verlieben! Übrigens: Das Wort „lasagna“ wird vom griechischen „lasanon“ abgeleitet, das schlicht Nachttopf bedeutet. Später machten die Römer daraus „lasanum“, den Kochtopf. Die Lasagne verdankt ihren Namen also jeweils dem Gefäß, in dem sie zubereitet wurde. </p>
       <span><a href="lasagne" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
@@ -197,7 +209,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <img class="responsive" src="images/chili-con-carne2.jpg";>
       </a>
       <h4>Chili con Carne</h4>
-      <p>Mexikanischer Bohneneintopf</p>
+      <p>Chili con Carne, oft kurz auch nur Chili ist die Bezeichnung eines scharfen Ragouts aus Fleisch und Chilischoten. Der Name des Gerichts bedeutet wörtlich Pfefferschoten mit Fleisch. Es ist ein typisches Gericht im Süden von Texas und heute in den gesamten Vereinigten Staaten von Amerika sowie in anderen Teilen der Welt bekannt.</p>
       <span><a href="chili-con-carne" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
@@ -208,7 +220,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         <img class="responsive" src="images/panna-cotta2.jpg";>
       </a>
       <h4>Panna Cotta</h4>
-      <p>Mediterrane Sahnespeise</p>
+      <p>Panna cotta ist ein puddingartiges italienisches Dessert, das aus Rahm bzw. Schlagsahne, Zucker und heutzutage meist auch Gelatine zubereitet wird. Traditionell wird lediglich die Sahne aufgekocht und reduziert, daher auch der Name.</p>
       <span><a href="panna-cotta" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
