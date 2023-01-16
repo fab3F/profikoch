@@ -25,6 +25,23 @@
 <meta property="og:url" content="https://profikoch.netlify.app" />
 <meta property="og:description" content="Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta property="og:image" content="images/favicon.png" /> 
+<style>
+  .homepagelink {
+            display: inline-flex;
+            border-radius: 8px;
+            padding: 4px 8px;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 10px;
+            transition: transform .2s;
+            color:black;
+        }
+
+        .homepagelink:hover {
+            transform: scale(1.1);
+            color:black;
+        }
+</style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -62,7 +79,7 @@
     	404
     </p>
     <i>
-        <style contenteditable="true" style="display: block; color: darkslategray;text-align:center;">
+        <style contenteditable="true" style="display: block; color: black ;text-align:center;">
         html,body {
             background-color:white;
         }
@@ -70,11 +87,15 @@
         p{
             color:black
         }
+        .homepagelink {
+            background-color: #bfbfbc;
+        }
+
     </style>
     </i>
     <br>
     <p style="text-align:center;">
-      <a href="#" class="zutatenlink">Zurück zur Übersicht</a>
+      <a href="#" class="homepagelink">Zurück zur Übersicht</a>
     </p>
 
 </body>
