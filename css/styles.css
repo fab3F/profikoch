@@ -30,6 +30,7 @@ body {
     max-width: 40px;
     max-height: 40px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .content * {
@@ -154,7 +155,7 @@ body {
 .zutaten-tabelle th {
     background-color: beige;
     font-weight: 600;
-    padding: 10px 10px;
+    padding: 10px;
     text-align: center;
     align-items: center;
 }
@@ -205,6 +206,7 @@ body {
     text-decoration: none;
     align-items: center;
     margin-left: 10px;
+    margin-right: 10px;
     transition: transform .2s;
 }
 
@@ -240,11 +242,7 @@ body {
     overflow: hidden;
 }
 
-.rezeptlink:hover {
-    transform: scale(1.02);
-    overflow: hidden;
-    color: black;
-}
+
 
 .rezeptlink {
     border-radius: 8px;
@@ -257,9 +255,17 @@ body {
     align-items: center;
     transition: transform .2s;
 }
+
+.rezeptlink:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    color: black;
+}
+
 .icon {
     transition: transform .4s;
 }
+
 .icon:hover {
     color: black;
     transform: scale(1.05);
@@ -273,8 +279,6 @@ body {
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1000% 1000%;
     animation: rainbow 25s ease infinite;
-    filter: blur(5px);
-
 }
 @keyframes rainbow {
      0%{background-position:0% 0%}
