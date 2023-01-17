@@ -206,6 +206,10 @@ body {
     transform: scale(1.1);
 }
 
+.h-with-button {
+    display: inline-flex;
+}
+
 .rezept {
     clear: left;
 }
