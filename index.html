@@ -26,59 +26,6 @@
 <meta property="og:description" content="Profikoch Website - Hier gibt es viele leckere Rezepte!" />
 <meta property="og:image" content="images/favicon.png" />
 
-<style type="text/css">
-  .rezept {
-    clear: left;
-  }
-
-  .rezept a {
-    float: left;
-    margin-right: 30px;
-    max-width: 650px;
-  }
-
-  .recipe_img {
-    border: 2px solid black !important;
-    border-style: solid !important;
-    border-radius: 18px;
-    transition: transform .4s;
-  }
-
-  .recipe_img:hover {
-    color: black;
-    transform: scale(1.075);
-    overflow: hidden;
-  }
-
-  .rezeptlink:hover {
-    transform: scale(1.02);
-    overflow: hidden;
-    color: black;
-  }
-
-  .rezeptlink {
-    border-radius: 8px;
-    border: 0px solid white;
-    border-style: none;
-    background-color: #bfbfbc;
-    color: black;
-    padding: 4px 8px;
-    text-decoration: none;
-    align-items: center;
-    transition: transform .2s;
-  }
-  .icon {
-    transition: transform .4s;
-  }
-  .icon:hover {
-    color: black;
-    transform: scale(1.05);
-    overflow: hidden;
-    cursor: pointer;
-  }
-</style>
-
-
 </head>
 <body>
 
@@ -100,6 +47,9 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
+          <a class="nav-link" href="zwiebelkuchen">Zwiebelkuchen</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="chili-con-carne">Chili con Carne</a>
         </li>
         <li class="nav-item">
@@ -110,9 +60,6 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="panna-cotta">Panna Cotta</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="zwiebelkuchen">Zwiebelkuchen</a>
         </li>
       </ul>
     </div>
@@ -130,7 +77,15 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('images/chili-con-carne.jpeg')">
+      <div class="carousel-item active" style="background-image: url('images/zwiebelkuchen2.jpg')">
+        <a href="zwiebelkuchen">
+          <div class="carousel-caption">
+            <h5>Zwiebelkuchen</h5>
+            <p>Herzhafter elsässischer Kuchen</p>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item" style="background-image: url('images/chili-con-carne.jpeg')">
         <a href="chili-con-carne">
           <div class="carousel-caption">
             <h5>Chili con Carne</h5>
@@ -162,14 +117,6 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
           </div>
         </a>
       </div>
-      <div class="carousel-item" style="background-image: url('images/zwiebelkuchen2.jpg')">
-        <a href="zwiebelkuchen">
-          <div class="carousel-caption">
-            <h5>Zwiebelkuchen</h5>
-            <p>Herzhafter elsässischer Kuchen</p>
-          </div>
-        </a>
-      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -197,7 +144,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
       <span><a href="zwiebelkuchen" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
-    <h3 style="clear: left;">Hauptspeisen</h3>
+    <h3 class="rezept">Hauptspeisen</h3>
     <div class="rezept">
       <a href="truthahn">
         <img class="recipe_img responsive" src="images/truthahn2.jpg";>
@@ -226,7 +173,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
       <span><a href="chili-con-carne" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
-    <h3 style="clear: left;">Desserts</h3>
+    <h3 class="rezept">Desserts</h3>
     
     <div class="rezept">
       <a href="panna-cotta">
@@ -238,7 +185,7 @@ Margin bestimmt den Abstand eines Elements zum nächsten Element -->
       <span><a href="panna-cotta" class="rezeptlink">Hier geht es zum Rezept!</a></span>
     </div>
 
-    <div style="clear: left;"></div>
+    <div class="rezept"></div>
   
   </section> 
 </div>

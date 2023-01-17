@@ -206,6 +206,57 @@ body {
     transform: scale(1.1);
 }
 
+.rezept {
+    clear: left;
+}
+
+.rezept a {
+    float: left;
+    margin-right: 30px;
+    max-width: 650px;
+}
+
+.recipe_img {
+    border: 2px solid black !important;
+    border-style: solid !important;
+    border-radius: 18px;
+    transition: transform .5s;
+}
+
+.recipe_img:hover {
+    color: black;
+    transform: scale(1.03);
+    overflow: hidden;
+}
+
+.rezeptlink:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    color: black;
+}
+
+.rezeptlink {
+    border-radius: 8px;
+    border: 0px solid white;
+    border-style: none;
+    background-color: #bfbfbc;
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    align-items: center;
+    transition: transform .2s;
+}
+.icon {
+    transition: transform .4s;
+}
+.icon:hover {
+    color: black;
+    transform: scale(1.05);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
 /*modifiziert von https://codepen.io/nohoid/pen/eYXpNL */
 .rainbow {
     
