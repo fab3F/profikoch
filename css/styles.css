@@ -272,6 +272,7 @@ body {
     background-size: 1000% 1000%;
     animation: rainbow 25s ease infinite;
     filter: blur(5px);
+    
 }
 @keyframes rainbow {
      0%{background-position:0% 0%}
