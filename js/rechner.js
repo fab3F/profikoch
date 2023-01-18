@@ -1,10 +1,19 @@
-let tbs = document.getElementsByClassName("zutaten-tabelle");
+if(document.getElementsByClassName("zutaten-tabelle")[0] != "undefined") {
+    let tbs = document.getElementsByClassName("zutaten-tabelle");
+} else {
+    return 0;
+}
+
 for(let i = 0; i < tbs.length; i++){
     localStorage.setItem("table" + i, tbs[i].outerHTML);
 }
 localStorage.setItem("value", document.getElementById("portionen").value);
 
 function calculate(ports){
+
+    if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
+        return 0;
+    }
 
     let tbsl = document.getElementsByClassName("zutaten-tabelle").length;
     let orginal_value = parseInt(localStorage.getItem("value"));
