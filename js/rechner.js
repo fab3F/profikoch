@@ -1,4 +1,6 @@
-if(document.getElementsByClassName("zutaten-tabelle")[0] != "undefined") {
+if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
+    
+} else {
     let tbs = document.getElementsByClassName("zutaten-tabelle");
     for(let i = 0; i < tbs.length; i++){
         localStorage.setItem("table" + i, tbs[i].outerHTML);
