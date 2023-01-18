@@ -18,16 +18,14 @@ body {
     width: 50%;
 }
 
-.nav-link {
-    transition: transform .2s;
-}
-
-body.nontouch .nav-link:hover {
-    transform: scale(1.0);
-}
-
-.nav-link:hover {
-    transform: scale(1.05);
+@media(hover: hover){
+    .nav-link {
+        transition: transform .2s;
+    }
+    
+    .nav-link:hover {
+        transform: scale(1.05);
+    }
 }
 
 .logo {
