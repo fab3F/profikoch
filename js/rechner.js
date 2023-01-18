@@ -1,7 +1,7 @@
 if(document.getElementsByClassName("zutaten-tabelle")[0] != "undefined") {
     let tbs = document.getElementsByClassName("zutaten-tabelle");
 } else {
-    return 0;
+    return;
 }
 
 for(let i = 0; i < tbs.length; i++){
@@ -12,7 +12,7 @@ localStorage.setItem("value", document.getElementById("portionen").value);
 function calculate(ports){
 
     if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
-        return 0;
+        return;
     }
 
     let tbsl = document.getElementsByClassName("zutaten-tabelle").length;
