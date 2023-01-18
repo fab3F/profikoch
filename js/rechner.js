@@ -1,13 +1,10 @@
 if(document.getElementsByClassName("zutaten-tabelle")[0] != "undefined") {
     let tbs = document.getElementsByClassName("zutaten-tabelle");
-} else {
-    return;
+    for(let i = 0; i < tbs.length; i++){
+        localStorage.setItem("table" + i, tbs[i].outerHTML);
+    }
+    localStorage.setItem("value", document.getElementById("portionen").value);
 }
-
-for(let i = 0; i < tbs.length; i++){
-    localStorage.setItem("table" + i, tbs[i].outerHTML);
-}
-localStorage.setItem("value", document.getElementById("portionen").value);
 
 function calculate(ports){
 
