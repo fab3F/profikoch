@@ -1,6 +1,4 @@
-if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
-    
-} else {
+if(typeof document.getElementsByClassName("zutaten-tabelle")[0] != "undefined") {
     let tbs = document.getElementsByClassName("zutaten-tabelle");
     for(let i = 0; i < tbs.length; i++){
         localStorage.setItem("table" + i, tbs[i].outerHTML);
@@ -10,7 +8,7 @@ if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
 
 function calculate(ports){
 
-    if(document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
+    if(typeof document.getElementsByClassName("zutaten-tabelle")[0] === "undefined") {
         return;
     }
 
