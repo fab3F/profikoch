@@ -53,8 +53,8 @@ body {
     border: black 1px solid;
     border-style: none;
     border-radius: 10px;
-    left: 25%;
-    right: 25%;
+    left: 20%;
+    right: 20%;
     transition: transform .3s;
 }
 
