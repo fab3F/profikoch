@@ -22,6 +22,10 @@ body {
     transition: transform .2s;
 }
 
+body.nontouch .nav-link:hover {
+    transform: scale(1.0);
+}
+
 .nav-link:hover {
     transform: scale(1.05);
 }
