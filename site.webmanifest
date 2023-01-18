@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "Profikoch Repezte",
+    "short_name": "Profikoch",
+    "description": "Profikoch Website - Hier gibt es viele leckere Rezepte!",
+    "icons": [
+        {
+            "src": "/images/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#F0F0F2",
+    "background_color": "#F0F0F2",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "https://profikoch.netlify.app",
+    "scope": "https://profikoch.netlify.app/"
+}
