@@ -287,6 +287,7 @@ body {
 .rainbow_txt {
     -webkit-background-clip: text;
     background-clip:text; 
+    color:transparent;
 }
 @keyframes rainbow {
      0%{background-position:0% 0%}
