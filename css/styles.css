@@ -282,6 +282,9 @@ body {
     background-size: 1000% 1000%;
     animation: rainbow 25s ease infinite;
     backdrop-filter: blur(5px);
+    -webkit-background-clip: text;
+    background-clip:text; 
+    color:transparent
 }
 @keyframes rainbow {
      0%{background-position:0% 0%}
