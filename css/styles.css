@@ -291,6 +291,6 @@ body {
 }
 @keyframes rainbow {
      0%{background-position:0% 0%}
-     99%{ background-position:90.9% 90.9%;}
+     99%{ background-position:95% 95%;}
      100%{background-position:100% 100%}
 }
