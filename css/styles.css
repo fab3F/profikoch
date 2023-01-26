@@ -285,6 +285,10 @@ body {
     -webkit-background-clip: text;
     background-clip:text; 
 }
+.404 {
+    -webkit-background-clip: text;
+    background-clip:text; 
+}
 @keyframes rainbow {
      0%{background-position:0% 0%}
      50%{background-position:100% 100%}
